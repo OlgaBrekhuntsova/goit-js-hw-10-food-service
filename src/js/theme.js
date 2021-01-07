@@ -4,8 +4,7 @@ const Theme = {
 };
 const refs = {
 checkbox : document.querySelector('#theme-switch-toggle'),
-    body: document.querySelector('body'),
-label: document.querySelector('label.theme-switch__track'),
+body: document.querySelector('body'),
 }
 if (localStorage.getItem('theme') !== Theme.DARK) { refs.body.classList.add(Theme.LIGHT) }
 else {
